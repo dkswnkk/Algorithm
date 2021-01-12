@@ -1,5 +1,5 @@
 ﻿//  Copyright © 2021 안주형. All rights reserved.
-//  
+//  이분탐색
 //  https://www.acmicpc.net/problem/10815
 //  BOJ10815 숫자 카드
 #include <iostream>
