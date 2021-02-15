@@ -17,19 +17,12 @@ int main() {
 		multiset<int>set;	//set은 중복허용이 안되지만 multiset은 가능. 
 		int N; cin >> N;
 		for (int i = 0; i < N; i++) {	//큐 원소 삽입
-			string a, b; cin >> a >> b;
-			if (a == "I") set.insert(stoi(b));
+			char a; int b; cin >> a >> b;
+			if (a == 'I') set.insert(b);
 			else {
 				if (set.empty()) continue;
-				if (stoi(b) == 1) {	//D 1일떄
-					auto it = set.end();
-					it--;
-					set.erase(it);
-				}
-				else {				//D -1 일때	
-					auto it = set.begin();
-					set.erase(it);
-				}
+				if (b == 1) set.erase(--set.end());	//D 1일떄				
+				else set.erase(set.begin()); //D -1 일때	
 			}
 		}
 
