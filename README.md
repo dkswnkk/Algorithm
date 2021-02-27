@@ -5,5 +5,5 @@ This is Explanation for Algorithm Problem.
 
 사용언어: c++
 
-# 2021-02-27 기준 300문제 풀이
+# 2021-02-27 기준 301문제 풀이
 프로필: https://www.acmicpc.net/user/dkswnkk
