@@ -2,6 +2,7 @@
 //  
 //  https://www.acmicpc.net/problem/2920
 //  BOJ2920 음계
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
