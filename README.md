@@ -6,4 +6,4 @@ This is Explanation for Algorithm Problem.
 사용언어: c++
 
 # 프로필
-![dkswnkk's solved.ac stats](https://github-readme-solvedac.hyp3rflow.vercel.app/api/?handle=dkswnkk)
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=dkswnkk)](https://solved.ac/dkswnkk/)
