@@ -13,7 +13,7 @@ using namespace std;
 vector<int> graph[max];
 int visited[max];	//0=방문x, 1=빨강, 2=파랑
 int V, E;	//V=정점의 개수, E=간선의 개수
-bool flag = true;
+
 
 void dfs(int start) {
 	if (!visited[start]) visited[start] = 1;	//방문하지 않았다면 빨강색으로 처리
@@ -28,23 +28,24 @@ void dfs(int start) {
 	}
 }
 
-void check() {
+bool check() {
 	for (int i = 1; i <= V; i++) {
 		for (int k = 0; k < graph[i].size(); k++) {
 			if (visited[i] == visited[graph[i][k]]) {
-				flag = false;	//현재 노드랑 연결된 노드의 색깔이 같다면 false
+				return 0;	//현재 노드랑 연결된 노드의 색깔이 같다면 이분그래프X
 			}
 		}
 	}
+	return 1;
 }
 
-void reset() {
+void reset() {	//초기화 함수
 	for (int i = 0; i < max; i++) {
 		graph[i].clear();
 	}
-	flag = true;
-	memset(graph, 0, sizeof(graph));
+	memset(visited, 0, sizeof(visited));
 }
+
 int main() {
 	ios_base::sync_with_stdio(false);
 	cin.tie(0);
@@ -63,8 +64,8 @@ int main() {
 			if (!visited[i]) dfs(i);	
 		}
 
-		check();
-		if (flag) cout << "YES" << "\n";
+
+		if (check()) cout << "YES" << "\n";
 		else cout << "NO" << "\n";
 		reset();
 	}
