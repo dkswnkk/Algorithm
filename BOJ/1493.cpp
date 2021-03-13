@@ -13,16 +13,16 @@ int main() {
 
 	string s; cin >> s;
 	int zero = 0, one = 0;
-	bool flag = true;
+	int flag = -1;
 
-	for (int i = 0; i < s.length() - 1; i++) {	 //연속된 수 갯수 체크
+	for (int i = 0; i < s.length(); i++) {	 //연속된 수 갯수 체크
 		if (s[i] == '0') {
-			if (flag) zero++;
-			flag = false;
+			if (flag != 1) zero++;
+			flag = 1;
 		}
-		if (s[i] == '1') {
-			if (!flag) one++;
-			flag = true;
+		else if (s[i] == '1') {
+			if (flag != 0) one++;
+			flag = 0;
 		}
 	}
 	cout << min(zero, one);
