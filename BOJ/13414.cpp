@@ -48,7 +48,7 @@ int main() {
 	}
 
 	sort(v.begin(), v.end());
-	for (int i = 0; i < k; i++) {	//출력
+	for (int i = 0; i < min(k,(int)v.size()); i++) {	//출력
 		cout << v[i].second << "\n";
 	}
 }
