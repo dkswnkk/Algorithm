@@ -5,6 +5,7 @@ This is Explanation for Algorithm Problem.
 
 사용언어: c++
 
-# 백준 프로필
+<h2>백준 프로필</h2>
+
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=dkswnkk)](https://solved.ac/dkswnkk/)
 
