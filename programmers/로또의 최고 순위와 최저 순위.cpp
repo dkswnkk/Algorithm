@@ -1,6 +1,5 @@
 #include <string>
 #include <vector>
-#include <algorithm>
 #include <map>
 
 using namespace std;
@@ -17,6 +16,7 @@ int check(int grade){
 }
 
 vector<int> solution(vector<int> lottos, vector<int> win_nums) {
+    
     vector<int> answer;
     map<int,int>lottos_m,win_nums_m;
     
