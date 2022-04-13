@@ -24,23 +24,16 @@ vector<string> solution(vector<string> orders, vector<int> course) {
     vector<string> answer;
     
     for(string order:orders){
-        map<string,int>visited;
         set<string>ncr;
         
-        for(int i=0; i<order.length(); i++){
-            combination(i,  "", order, order.length());
-        }
+        for(int i=0; i<order.length(); i++) combination(i,  "", order, order.length());
         
         for(string &combi:combi_arr) sort(combi.begin(),combi.end());
         for(string combi:combi_arr) ncr.insert(combi);
         
         
-        for(auto it=ncr.begin(); it!=ncr.end(); it++){
-            if(!visited[*it]){
-                cnt[*it]++;
-                visited[*it]=1;
-            }
-        }
+        for(auto it=ncr.begin(); it!=ncr.end(); it++) cnt[*it]++;
+        
         combi_arr.clear();
     }
     
