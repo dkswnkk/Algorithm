@@ -6,46 +6,33 @@ using namespace std;
 
 int solution(int n, vector<int> lost, vector<int> reserve) {
     int answer = 0;
+    map<int,int> student;
+    for(int i=1; i<=n; i++) student[i] = 1; // 체육복 셋팅
+    for(int peo:lost) student[peo]--;   // 체육복 잃어버림
+    for(int reser: reserve) student[reser]++;   // 여유 체육복 가지고 있음
     
-    map<int,int>lost_m,reserve_m;
-    
-    for(int i=0; i<lost.size(); i++){
-        lost_m[lost[i]]++;
-    }
-    for(int i=0; i<reserve.size(); i++){
-        reserve_m[reserve[i]]++;
-    }
-    
-    for(int i=1; i<=n; i++){
-        if(lost_m[i]==1&&reserve_m[i]==1){ //체육복을 도난 당했고, 본인 여벌옷이 있을때
-            reserve_m[i]--;
-            lost_m[i]--;
+    for(auto it = student.begin(); it!=student.end(); it++){
+        if(it->second==0){  // 체육복이 없을 경우
             
-        }
-    }
-    
-    for(int i=1; i<=n; i++){
-        if(lost_m[i]==1){ //체육복을 도난 당했을 때
-            for(auto k=reserve_m.begin(); k!=reserve_m.end(); k++){ //체육복을 빌릴 수 있는지 알아본다.
-                if(k->first==i-1&&k->second==1){
-                    k->second--;
-                    lost_m[i]--;
-                    break;
-                }
-                else if(k->first==i+1&&k->second==1){
-                    k->second--;
-                    lost_m[i]--;
-                    break;
-                }
-                
+            int left = (it->first!=0)?(it->first)-1:-1;   // 왼쪽 사람
+            int right = (it->first!=n)?(it->first)+1:-1;  // 오른쪽 사람
+            
+            if(student[left]>1){    // 왼쪽 사람이 여유복이 있을 경우
+                student[left]--;    // 빌려줌
+                it->second++;   
+            }
+            else if(student[right]>1){ // 오른쪽 사람이 여유복이 있을 경우
+                student[right]--;   //빌려줌
+                it->second++;
             }
         }
     }
     
-    for(auto i=lost_m.begin(); i!=lost_m.end(); i++){
-        if(i->second!=0) n--;
-    }
+     for(auto it = student.begin(); it!=student.end(); it++){
+        if(it->second!=0) answer++;   
+     }
     
-    answer=n;
+    
+    
     return answer;
 }
