@@ -6,20 +6,16 @@ using namespace std;
 
 string solution(vector<string> participant, vector<string> completion) {
     string answer = "";
-    map<string,int>m;
     
-    for(int i=0; i<participant.size(); i++){
-        m[participant[i]]++;
-    }
-    for(int i=0; i<completion.size(); i++){
-       m[completion[i]]--;
-    }
-    for(auto i=m.begin(); i!=m.end(); i++){
-        if(i->second!=0){
-            answer=i->first;
-            break;
+    map<string, int> people;
+    
+    for(string par: participant) people[par]++;
+    for(string comple: completion) people[comple]--;
+    for(auto it = people.begin(); it!=people.end(); it++){
+        if(it->second!=0){
+            answer = it->first;
+            return answer;
         }
     }
-    
     return answer;
 }
