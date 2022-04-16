@@ -1,23 +1,15 @@
 #include <string>
 #include <vector>
-
+#include <algorithm>
+#include <iostream>
 using namespace std;
 
 string solution(string s) {
-    string answer = "",temp;
     
-    for(int i=0; i<s.length()+1; i++){
-        if(s[i]!=' '&&s[i]!='\0') temp+=s[i];
-        else{
-            temp[0]=toupper(temp[0]);
-            for(int k=1; k<temp.length(); k++){
-                temp[k]=tolower(temp[k]);
-            }
-            if(i==s.length()) answer+=temp;
-            else answer+=temp+" ";
-            temp.clear();
-        }
-    }   
-    
-    return answer;
+    if(islower(s[0])) s[0] = toupper(s[0]);
+    for(int i=1; i<s.length(); i++){
+        if(!isdigit(s[i-1])&&!isalpha(s[i-1])) s[i]=toupper(s[i]);
+        else s[i] = tolower(s[i]);
+    }
+    return s;
 }
