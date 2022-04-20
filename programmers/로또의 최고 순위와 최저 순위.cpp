@@ -1,57 +1,36 @@
 #include <string>
 #include <vector>
 #include <map>
+#include <iostream>
 
 using namespace std;
 
-int check(int grade){
-    int ans;
-    if(grade==6) return ans=1;
-    else if(grade==5) return ans=2;
-    else if(grade==4) return ans=3;
-    else if(grade==3) return ans=4;
-    else if(grade==2) return ans=5;
-    else return ans=6;
-    
+int check(int n){
+    if(n<=1) return 6;
+    return 7-n;
 }
-
 vector<int> solution(vector<int> lottos, vector<int> win_nums) {
-    
     vector<int> answer;
-    map<int,int>lottos_m,win_nums_m;
+    map<int,int>m;
+    int best = 0, worst = 0;
     
-    for(int i=0; i<lottos.size(); i++){
-        lottos_m[lottos[i]]++;
+    for(int lotto: lottos) m[lotto]++;
+    for(int win: win_nums){
+        if(m.find(win)!=m.end()) m[win]--;
     }
     
-    for(int i=0; i<win_nums.size(); i++){
-        win_nums_m[win_nums[i]]++;
-    }
-    
-    int less=0,great=0;
-    
-    for(auto i=lottos_m.begin(); i!=lottos_m.end(); i++){
-        for(auto k=win_nums_m.begin(); k!=win_nums_m.end(); k++){
-            if(i->first==k->first){
-                i->second--;  //로또번호가 일치할때 갯수를 깐다.
-                k->second--;
-                less++;
-            }
+    for(auto it=m.begin(); it!=m.end(); it++){
+        if(it->first==0){
+            best+=it->second;
+            worst+=it->second;
+        } 
+        else if(it->first!=0){
+            if(it->second==0) best++;
+            else worst++;
         }
     }
     
-    for(auto k=win_nums_m.begin(); k!=win_nums_m.end(); k++){
-        if(k->second!=0&&lottos_m[0]!=0){
-            lottos_m[0]--;
-            k->second--;
-            great++;
-        }
-    }
-    
-    great+=less;
-    
-    answer.push_back(check(great));
-    answer.push_back(check(less));
-    
+    answer.push_back(check(best));
+    answer.push_back(check(6-worst));
     return answer;
 }
