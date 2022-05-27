@@ -3,36 +3,37 @@
 
 using namespace std;
 
-int n1,n2,answer;
-int visited[201];
-int graph[201][201];
 
 void dfs(int x){
-    visited[x]=1;
-    
-    for(int i=0; i<n1; i++){
-        if(!visited[i]&&graph[x][i]){
-            visited[i]=1;
-            dfs(i);
+
+}
+
+int graph[101][101];
+int visited[101];
+
+void dfs(int start, int n){
+    visited[start]=1;
+    for(int i=0; i<n; i++){
+        if(graph[start][i]){
+            if(!visited[i]) dfs(i, n);
         }
     }
 }
-
 int solution(int n, vector<vector<int>> computers) {
+    int answer = 0;
     
-    n1=n;
-    n2=computers[0].size();
-    for(int i=0; i<n1; i++){
-        for(int k=0; k<n2; k++){
-            graph[i][k]=computers[i][k];
-            graph[k][i]=computers[k][i];
-        }
+    for(int i=0; i<computers.size(); i++){
+       for(int k=0; k<n; k++){
+           if(computers[i][k]]){
+               graph[i][k] = 1;
+               graph[k][i] = 1;
+           }
+       }
     }
+    
     for(int i=0; i<n; i++){
-        if(!visited[i]){
-            dfs(i);
-            answer++;
-        }
-    }    
+        if(!visited[i]) answer++;
+        dfs(i, n);
+    }
     return answer;
 }
