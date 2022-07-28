@@ -30,15 +30,13 @@ int main(){
         }
     }
     
-    for(i; i<N; i++) st.push(num[i]);
 
-    string temp = "", ans = "";
+    string ans = "";
     while(!st.empty()){
-        temp += st.top();
+        ans += st.top();
         st.pop();
     }
-    reverse(temp.begin(), temp.end());
-    
-    for(int i=0; i<N-K; i++) ans +=temp[i];
+    reverse(ans.begin(), ans.end());
+    ans = ans.substr(0, N-K);
     cout<<ans;
 }
