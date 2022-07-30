@@ -7,11 +7,11 @@ using namespace std;
 struct Info{
     int from;
     int to;
-    int weight;
+    int box;
 };
 
 vector<Info>v;
-int trunk[10001];
+int box[10001];
 
 const bool cmp(Info &i1, Info &i2){
     if(i1.to == i2.to) return i1.from < i2.from;
@@ -34,15 +34,23 @@ int main(){
     
     for(int i=0; i<v.size(); i++){
         int cnt = 0;
+        
+        // 해당 구간에 가장 많이 적재된 양 찾음
         for(int k=v[i].from; k<v[i].to; k++){
-            cnt = max(trunk[k], cnt);
+            cnt = max(box[k], cnt);
         }
         
-        ans += min(v[i].weight, C - cnt);
-        for(int k=v[i].from; k<v[i].to; k++){   // 박스를 싣는다.
-            trunk[k] += min(v[i].weight, C-cnt);
+        // 상자의 최대 적재량을 넘길 수 있기 때문에 지금 보고 있는 상자의 개수와 남은 용량 중 작은 것을 선택
+        int add = min(v[i].box, C-cnt);
+        
+        for(int k=v[i].from; k<v[i].to; k++){   // 해당 구간에 적재된 것을 갱신한다.
+            box[k] += add;
         }
+        
+        // 트럭에 더 적재 할 수 있는 양을 찾아 적재한다.
+        ans += add;
     }
+    
     cout<<ans;
     
 }
