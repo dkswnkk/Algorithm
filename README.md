@@ -11,6 +11,7 @@
 4. [String to CharArray](https://dkswnkk.tistory.com/249?category=549172)
 5. [upper_bound, lower_bound](https://dkswnkk.tistory.com/533)
 6. [비트마스킹](https://dkswnkk.tistory.com/650)
+7. [배열 돌리기와 달팽이 배열](https://dkswnkk.tistory.com/660?category=549172)
 
 ## 템플릿 코드
 1. [플로이드-와샬](https://dkswnkk.tistory.com/535)
@@ -20,6 +21,7 @@
 
 ## ✅ 최근 푼 문제
 
+[2022/09/26 - [백준,c++] 1038번 - 감소하는 수](https://dkswnkk.tistory.com/661) <br/>
 [2022/09/21 - [C++, 템플릿] 배열 돌리기와 달팽이 배열](https://dkswnkk.tistory.com/660) <br/>
 [2022/09/21 - [백준,c++] 16935번 - 배열 돌리기 3](https://dkswnkk.tistory.com/659) <br/>
 [2022/09/21 - [백준,c++] 10703번 - 유성](https://dkswnkk.tistory.com/658) <br/>
@@ -30,4 +32,3 @@
 [2022/09/18 - [백준,c++] 6987번 - 월드컵](https://dkswnkk.tistory.com/653) <br/>
 [2022/09/18 - [백준,c++] 21608번 - 상어 초등학교](https://dkswnkk.tistory.com/652) <br/>
 [2022/09/18 - [백준,c++] 22856번 - 트리 순회](https://dkswnkk.tistory.com/651) <br/>
-[2022/09/16 - 비트마스크(BitMask)](https://dkswnkk.tistory.com/650) <br/>
