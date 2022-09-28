@@ -21,6 +21,10 @@
 
 ## ✅ 최근 푼 문제
 
+[2022/09/27 - [백준,c++] 22858번 - 원상 복구(small)](https://dkswnkk.tistory.com/665) <br/>
+[2022/09/27 - [백준,c++] 25644번 - 최대 상승](https://dkswnkk.tistory.com/664) <br/>
+[2022/09/27 - [백준,c++] 1309번 - 동물원](https://dkswnkk.tistory.com/663) <br/>
+[2022/09/27 - [백준,c++] 12782번 - 비트 우정지수](https://dkswnkk.tistory.com/662) <br/>
 [2022/09/26 - [백준,c++] 1038번 - 감소하는 수](https://dkswnkk.tistory.com/661) <br/>
 [2022/09/21 - [C++, 템플릿] 배열 돌리기와 달팽이 배열](https://dkswnkk.tistory.com/660) <br/>
 [2022/09/21 - [백준,c++] 16935번 - 배열 돌리기 3](https://dkswnkk.tistory.com/659) <br/>
@@ -28,7 +32,3 @@
 [2022/09/21 - [백준,c++] 22860번 - 폴더 정리 (small)](https://dkswnkk.tistory.com/657) <br/>
 [2022/09/18 - [백준,c++] 14500번 - 테트로미노](https://dkswnkk.tistory.com/656) <br/>
 [2022/09/18 - [백준,c++] 21278번 - 호석이 두 마리 치킨](https://dkswnkk.tistory.com/655) <br/>
-[2022/09/18 - [백준,c++] 15661번 - 링크와 스타트](https://dkswnkk.tistory.com/654) <br/>
-[2022/09/18 - [백준,c++] 6987번 - 월드컵](https://dkswnkk.tistory.com/653) <br/>
-[2022/09/18 - [백준,c++] 21608번 - 상어 초등학교](https://dkswnkk.tistory.com/652) <br/>
-[2022/09/18 - [백준,c++] 22856번 - 트리 순회](https://dkswnkk.tistory.com/651) <br/>
