@@ -21,6 +21,7 @@
 
 ## ✅ 최근 푼 문제
 
+[2022/09/28 - [백준,c++] 1043번 - 거짓말](https://dkswnkk.tistory.com/666) <br/>
 [2022/09/27 - [백준,c++] 22858번 - 원상 복구(small)](https://dkswnkk.tistory.com/665) <br/>
 [2022/09/27 - [백준,c++] 25644번 - 최대 상승](https://dkswnkk.tistory.com/664) <br/>
 [2022/09/27 - [백준,c++] 1309번 - 동물원](https://dkswnkk.tistory.com/663) <br/>
@@ -31,4 +32,3 @@
 [2022/09/21 - [백준,c++] 10703번 - 유성](https://dkswnkk.tistory.com/658) <br/>
 [2022/09/21 - [백준,c++] 22860번 - 폴더 정리 (small)](https://dkswnkk.tistory.com/657) <br/>
 [2022/09/18 - [백준,c++] 14500번 - 테트로미노](https://dkswnkk.tistory.com/656) <br/>
-[2022/09/18 - [백준,c++] 21278번 - 호석이 두 마리 치킨](https://dkswnkk.tistory.com/655) <br/>
