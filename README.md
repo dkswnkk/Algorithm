@@ -31,4 +31,3 @@
 [2022/09/21 - [백준,c++] 16935번 - 배열 돌리기 3](https://dkswnkk.tistory.com/659) <br/>
 [2022/09/21 - [백준,c++] 10703번 - 유성](https://dkswnkk.tistory.com/658) <br/>
 [2022/09/21 - [백준,c++] 22860번 - 폴더 정리 (small)](https://dkswnkk.tistory.com/657) <br/>
-[2022/09/18 - [백준,c++] 14500번 - 테트로미노](https://dkswnkk.tistory.com/656) <br/>
