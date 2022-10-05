@@ -21,6 +21,7 @@
 
 ## ✅ 최근 푼 문제
 
+[2022/10/04 - [백준,c++] 1780번 - 종이의 개수](https://dkswnkk.tistory.com/668) <br/>
 [2022/09/28 - [백준,c++] 1043번 - 거짓말](https://dkswnkk.tistory.com/666) <br/>
 [2022/09/27 - [백준,c++] 22858번 - 원상 복구(small)](https://dkswnkk.tistory.com/665) <br/>
 [2022/09/27 - [백준,c++] 25644번 - 최대 상승](https://dkswnkk.tistory.com/664) <br/>
@@ -30,4 +31,3 @@
 [2022/09/21 - [C++, 템플릿] 배열 돌리기와 달팽이 배열](https://dkswnkk.tistory.com/660) <br/>
 [2022/09/21 - [백준,c++] 16935번 - 배열 돌리기 3](https://dkswnkk.tistory.com/659) <br/>
 [2022/09/21 - [백준,c++] 10703번 - 유성](https://dkswnkk.tistory.com/658) <br/>
-[2022/09/21 - [백준,c++] 22860번 - 폴더 정리 (small)](https://dkswnkk.tistory.com/657) <br/>
