@@ -21,6 +21,7 @@
 
 ## ✅ 최근 푼 문제
 
+[2022/11/02 - [백준,c++] 4485번 - 녹색 옷 입은 애가 젤다지?](https://dkswnkk.tistory.com/671) <br/>
 [2022/10/04 - [백준,c++] 1780번 - 종이의 개수](https://dkswnkk.tistory.com/668) <br/>
 [2022/09/28 - [백준,c++] 1043번 - 거짓말](https://dkswnkk.tistory.com/666) <br/>
 [2022/09/27 - [백준,c++] 22858번 - 원상 복구(small)](https://dkswnkk.tistory.com/665) <br/>
@@ -29,4 +30,3 @@
 [2022/09/27 - [백준,c++] 12782번 - 비트 우정지수](https://dkswnkk.tistory.com/662) <br/>
 [2022/09/26 - [백준,c++] 1038번 - 감소하는 수](https://dkswnkk.tistory.com/661) <br/>
 [2022/09/21 - [C++, 템플릿] 배열 돌리기와 달팽이 배열](https://dkswnkk.tistory.com/660) <br/>
-[2022/09/21 - [백준,c++] 16935번 - 배열 돌리기 3](https://dkswnkk.tistory.com/659) <br/>
