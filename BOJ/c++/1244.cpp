@@ -6,10 +6,7 @@ int N;
 
 void boy(int num){
     for(int i=num; i<=N; i++){
-        if(i % num == 0){
-            if(arr[i] == 0) arr[i] = 1;
-            else arr[i] = 0;
-        }
+        if(i % num == 0) arr[i] = !arr[i];
     }
 }
 
@@ -26,10 +23,7 @@ void girl(int num){
     }
     left++;
     right--;
-    for(int i=left; i<=right; i++){
-        if(arr[i] == 0) arr[i] = 1;
-        else arr[i] = 0;
-    }
+    for(int i=left; i<=right; i++) arr[i] = !arr[i];
 }
 int main(){
     ios_base::sync_with_stdio(false);
@@ -46,5 +40,7 @@ int main(){
     for(int i=1; i<=N; i++){
         cout<<arr[i] <<' ';
         if(i % 20 == 0) cout<<'\n';
-    } 
+    }
+    
 }
+
