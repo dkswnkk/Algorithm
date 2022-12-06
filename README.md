@@ -25,4 +25,3 @@
 [2022/10/04 - [백준,c++] 1780번 - 종이의 개수](https://dkswnkk.tistory.com/668) <br/>
 [2022/09/28 - [백준,c++] 1043번 - 거짓말](https://dkswnkk.tistory.com/666) <br/>
 [2022/09/27 - [백준,c++] 22858번 - 원상 복구(small)](https://dkswnkk.tistory.com/665) <br/>
-[2022/09/27 - [백준,c++] 25644번 - 최대 상승](https://dkswnkk.tistory.com/664) <br/>
