@@ -23,5 +23,3 @@
 
 [2022/11/02 - [백준,c++] 4485번 - 녹색 옷 입은 애가 젤다지?](https://dkswnkk.tistory.com/671) <br/>
 [2022/10/04 - [백준,c++] 1780번 - 종이의 개수](https://dkswnkk.tistory.com/668) <br/>
-[2022/09/28 - [백준,c++] 1043번 - 거짓말](https://dkswnkk.tistory.com/666) <br/>
-[2022/09/27 - [백준,c++] 22858번 - 원상 복구(small)](https://dkswnkk.tistory.com/665) <br/>
