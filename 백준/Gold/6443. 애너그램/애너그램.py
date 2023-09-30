@@ -8,15 +8,16 @@ def backtracking(word, current, visited):
         return
     for i in range(0, len(word)):
         temp = current + word[i]
-        if (temp not in duplicate) and (not visited[i]):
-            visited[i] = True
-            duplicate.add(temp)
-            backtracking(word, temp, visited)
-            visited[i] = False
+        if (visited[i] or (temp in duplicate)):
+            continue
+        visited[i] = True
+        duplicate.add(temp)
+        backtracking(word, temp, visited)
+        visited[i] = False
 
 answer = set()
 for _ in range(N):
-    word = sorted(sys.stdin.readline().strip())
+    word = sys.stdin.readline().strip()
     visited = [False] * len(word)
     duplicate = set()
     backtracking(word, "", visited)
