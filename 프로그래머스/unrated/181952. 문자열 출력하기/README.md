@@ -1,10 +1,10 @@
 # [unrated] 문자열 출력하기 - 181952 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181952?language=cpp) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181952?language=python3) 
 
 ### 성능 요약
 
-메모리: 3.68 MB, 시간: 1.61 ms
+메모리: 7.29 MB, 시간: 11.95 ms
 
 ### 구분
 
